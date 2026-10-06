@@ -1,0 +1,881 @@
+/* ========================================
+   RESEARCH PAGE
+======================================== */
+
+
+/* ========================================
+   PAGE HERO
+======================================== */
+
+.page-hero {
+    width: 100%;
+    min-height: 560px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 80px 7%;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(180, 93, 135, 0.15),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #fff9fb,
+            #f7eef3
+        );
+
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   HERO EYEBROW
+======================================== */
+
+.page-hero .eyebrow {
+    margin: 0 0 16px;
+
+    color: #9b4d73;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* ========================================
+   HERO TITLE
+======================================== */
+
+.page-hero h1 {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto 22px;
+
+    color: #2d2430;
+
+    font-size: 4rem;
+    line-height: 1.08;
+
+    font-weight: 700;
+
+    letter-spacing: -1.2px;
+}
+
+.page-hero h1 span {
+    color: #9b4d73;
+}
+
+
+/* ========================================
+   HERO DESCRIPTION
+======================================== */
+
+.page-hero > p:last-child {
+    width: 100%;
+    max-width: 620px;
+
+    margin: 0 auto;
+
+    color: #6e636b;
+
+    font-size: 1.05rem;
+    line-height: 1.75;
+}
+
+
+/* ========================================
+   RESEARCH OVERVIEW
+======================================== */
+
+.research-overview {
+    width: 100%;
+
+    padding: 90px 7%;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+.research-overview .section-heading {
+    max-width: 700px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+
+/* ========================================
+   COMMON EYEBROW
+======================================== */
+
+.section-heading .eyebrow,
+.evidence-heading .eyebrow,
+.solution-link .eyebrow {
+    margin: 0 0 14px;
+
+    color: #9b4d73;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* ========================================
+   SECTION HEADINGS
+======================================== */
+
+.section-heading h2,
+.evidence-heading h2 {
+    margin: 0 0 15px;
+
+    color: #2d2430;
+
+    font-size: 2.6rem;
+    line-height: 1.2;
+}
+
+
+.section-heading > p:last-child {
+    margin: 0;
+
+    color: #6e636b;
+
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   RESEARCH STAT CARDS
+======================================== */
+
+.research-cards {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+}
+
+
+.research-card {
+    min-height: 175px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #eee3e9;
+
+    border-radius: 14px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+    transition: 0.3s ease;
+}
+
+
+.research-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #cfa7bb;
+
+    box-shadow: 0 10px 25px rgba(45, 36, 48, 0.06);
+}
+
+
+.research-card strong {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #9b4d73;
+
+    font-size: 3rem;
+    line-height: 1;
+}
+
+
+.research-card span {
+    max-width: 180px;
+
+    color: #6e636b;
+
+    font-size: 0.9rem;
+
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   EVIDENCE
+======================================== */
+
+.evidence {
+    width: 100%;
+
+    padding: 90px 7%;
+
+    background: #f7eef3;
+
+    box-sizing: border-box;
+}
+
+
+.evidence-heading {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto 35px;
+}
+
+
+.finding {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto 16px;
+
+    display: grid;
+    grid-template-columns: 55px minmax(0, 1fr);
+
+    gap: 22px;
+
+    padding: 28px;
+
+    background: #ffffff;
+
+    border: 1px solid #eee3e9;
+
+    border-radius: 14px;
+
+    box-sizing: border-box;
+}
+
+
+.finding:last-child {
+    margin-bottom: 0;
+}
+
+
+.finding-number {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f7eef3;
+
+    border-radius: 50%;
+
+    color: #9b4d73;
+
+    font-weight: 700;
+}
+
+
+.finding h3 {
+    margin: 0 0 9px;
+
+    color: #2d2430;
+
+    font-size: 1.2rem;
+}
+
+
+.finding p {
+    margin: 0 0 16px;
+
+    color: #6e636b;
+
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   PROGRESS BAR
+======================================== */
+
+.bar {
+    width: 100%;
+    height: 7px;
+
+    margin-bottom: 9px;
+
+    background: #eee3e9;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+
+.bar div {
+    height: 100%;
+
+    background: #9b4d73;
+
+    border-radius: 20px;
+}
+
+
+.finding > div:last-child > span {
+    color: #9b4d73;
+
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+
+/* ========================================
+   THEMES
+======================================== */
+
+.themes {
+    width: 100%;
+
+    padding: 90px 7%;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+.themes .section-heading {
+    max-width: 700px;
+
+    margin: 0 auto 40px;
+
+    text-align: center;
+}
+
+
+.theme-grid {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+
+.theme-grid > div {
+    padding: 28px;
+
+    background: #ffffff;
+
+    border: 1px solid #eee3e9;
+
+    border-radius: 14px;
+
+    box-sizing: border-box;
+
+    transition: 0.3s ease;
+}
+
+
+.theme-grid > div:hover {
+    transform: translateY(-4px);
+
+    border-color: #cfa7bb;
+
+    box-shadow: 0 10px 25px rgba(45, 36, 48, 0.05);
+}
+
+
+.theme-grid h3 {
+    margin: 0 0 9px;
+
+    color: #2d2430;
+
+    font-size: 1.15rem;
+}
+
+
+.theme-grid p {
+    margin: 0;
+
+    color: #6e636b;
+
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   RESEARCH LIMITATIONS
+======================================== */
+
+.research-limitations {
+    width: 100%;
+
+    padding: 75px 7%;
+
+    background: #f7eef3;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+.research-limitations h2 {
+    margin: 0 auto 15px;
+
+    color: #2d2430;
+
+    font-size: 2.3rem;
+}
+
+
+.research-limitations p {
+    width: 100%;
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: #6e636b;
+
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   SOLUTION
+======================================== */
+
+.solution-link {
+    width: 100%;
+
+    padding: 90px 7%;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(180, 93, 135, 0.12),
+            transparent 35%
+        ),
+        #f7eef3;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+.solution-link h2 {
+    width: 100%;
+    max-width: 800px;
+
+    margin: 0 auto 18px;
+
+    color: #2d2430;
+
+    font-size: 3rem;
+    line-height: 1.15;
+}
+
+
+.solution-link h2 span {
+    color: #9b4d73;
+}
+
+
+.solution-link > p:not(.eyebrow) {
+    width: 100%;
+    max-width: 680px;
+
+    margin: 0 auto 30px;
+
+    color: #6e636b;
+
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.solution-link .primary-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 13px 25px;
+
+    background: #9b4d73;
+
+    color: #ffffff;
+
+    border: 1px solid #9b4d73;
+
+    border-radius: 8px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+
+.solution-link .primary-btn:hover {
+    transform: translateY(-3px);
+
+    background: #843f61;
+
+    box-shadow: 0 8px 20px rgba(155, 77, 115, 0.18);
+}
+
+
+/* ========================================
+   LAPTOP
+   1025px - 1300px
+======================================== */
+
+@media (max-width: 1300px) {
+
+    .page-hero {
+        min-height: 520px;
+
+        padding: 70px 6%;
+    }
+
+    .page-hero h1 {
+        max-width: 800px;
+
+        font-size: 3.6rem;
+    }
+
+    .page-hero > p:last-child {
+        max-width: 600px;
+    }
+
+    .research-overview,
+    .evidence,
+    .themes,
+    .solution-link {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .research-cards,
+    .finding,
+    .theme-grid,
+    .evidence-heading {
+        max-width: 1000px;
+    }
+
+    .research-card {
+        padding: 22px;
+    }
+
+    .research-card strong {
+        font-size: 2.7rem;
+    }
+}
+
+
+/* ========================================
+   SMALL LAPTOP / TABLET
+   769px - 1024px
+======================================== */
+
+@media (max-width: 1024px) {
+
+    .page-hero {
+        min-height: 500px;
+
+        padding: 65px 6%;
+    }
+
+    .page-hero h1 {
+        max-width: 720px;
+
+        font-size: 3.3rem;
+
+        letter-spacing: -0.8px;
+    }
+
+    .page-hero > p:last-child {
+        font-size: 1rem;
+    }
+
+
+    .research-overview,
+    .evidence,
+    .themes,
+    .solution-link {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+
+    .research-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .research-card {
+        min-height: 155px;
+    }
+
+
+    .section-heading h2,
+    .evidence-heading h2 {
+        font-size: 2.4rem;
+    }
+
+
+    .solution-link h2 {
+        font-size: 2.7rem;
+    }
+}
+
+
+/* ========================================
+   TABLET
+   601px - 768px
+======================================== */
+
+@media (max-width: 768px) {
+
+    .page-hero {
+        min-height: 480px;
+
+        padding: 60px 7%;
+    }
+
+
+    .page-hero h1 {
+        max-width: 650px;
+
+        font-size: 3rem;
+
+        line-height: 1.1;
+    }
+
+
+    .research-overview,
+    .evidence,
+    .themes,
+    .solution-link {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
+
+    .theme-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .finding {
+        grid-template-columns: 48px minmax(0, 1fr);
+
+        gap: 18px;
+
+        padding: 24px;
+    }
+
+
+    .solution-link h2 {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* ========================================
+   MOBILE
+   600px and below
+======================================== */
+
+@media (max-width: 600px) {
+
+    .page-hero {
+        min-height: 460px;
+
+        padding: 55px 7%;
+    }
+
+
+    .page-hero h1 {
+        max-width: 500px;
+
+        font-size: 2.6rem;
+
+        line-height: 1.12;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .page-hero > p:last-child {
+        max-width: 480px;
+
+        font-size: 0.98rem;
+
+        line-height: 1.7;
+    }
+
+
+    .research-cards {
+        grid-template-columns: 1fr;
+    }
+
+
+    .research-card {
+        min-height: 145px;
+
+        padding: 25px 20px;
+    }
+
+
+    .research-card strong {
+        font-size: 2.7rem;
+    }
+
+
+    .section-heading h2,
+    .evidence-heading h2 {
+        font-size: 2.2rem;
+    }
+
+
+    .finding {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        padding: 22px;
+    }
+
+
+    .finding-number {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .theme-grid > div {
+        padding: 24px;
+    }
+
+
+    .research-limitations {
+        padding: 60px 7%;
+    }
+
+
+    .research-limitations h2 {
+        font-size: 2rem;
+    }
+
+
+    .solution-link h2 {
+        font-size: 2.25rem;
+    }
+
+
+    .solution-link > p:not(.eyebrow) {
+        font-size: 0.98rem;
+    }
+
+
+    .solution-link .primary-btn {
+        width: 100%;
+        max-width: 260px;
+    }
+}
+
+
+/* ========================================
+   SMALL PHONES
+   400px and below
+======================================== */
+
+@media (max-width: 400px) {
+
+    .page-hero {
+        min-height: 440px;
+
+        padding: 50px 6%;
+    }
+
+
+    .page-hero h1 {
+        font-size: 2.25rem;
+
+        line-height: 1.15;
+    }
+
+
+    .page-hero > p:last-child {
+        font-size: 0.93rem;
+    }
+
+
+    .research-overview,
+    .evidence,
+    .themes,
+    .solution-link {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+
+    .section-heading h2,
+    .evidence-heading h2 {
+        font-size: 2rem;
+    }
+
+
+    .research-card strong {
+        font-size: 2.5rem;
+    }
+
+
+    .finding {
+        padding: 20px;
+    }
+
+
+    .solution-link h2 {
+        font-size: 2rem;
+    }
+}
